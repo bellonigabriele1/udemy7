@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pageSelected: string;
-  pageSelector(page: string) {
-    this.pageSelected = page;
-  }
+  numbers = [1, 2, 3, 4, 5];
+  onlyOdd = false;
 }
