@@ -9,14 +9,10 @@ export class HeaderComponent {
   @Output() activeSectionEvent = new EventEmitter<string>();
   activeSection: string;
 
-  onRecipes() {
-    console.log('onRecipes()');
-    this.activeSection = 'recipes';
+  onSelect(page) {
+    console.log('onSelect(' + page + ')');
+    this.activeSection = page;
     this.activeSectionEvent.emit(this.activeSection);
-  }
-
-  onShoppingList() {
-    console.log('onShoppingList()');
   }
 
 }
